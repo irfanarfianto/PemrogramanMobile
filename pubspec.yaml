@@ -32,6 +32,8 @@ dependencies:
   flutter:
     sdk: flutter
   carousel_slider: ^4.0.0
+  flutter_form_builder: ^7.7.0
+  toast: ^0.3.0
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -5,11 +5,10 @@ class Pertemuan3Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('UI advance'),
+        title: Text('Pertemuan 3'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(
-            16.0), // Tambahkan FormDemo ke dalam halaman "Pertemuan 3"
+      body: Center(
+        child: Text('Isi dari Pertemuan'),
       ),
     );
   }

@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'Pertemuan1Page.dart';
 import 'Pertemuan2Page.dart';
 import 'Pertemuan3Page.dart';
+import 'Pertemuan4Page.dart';
 
 void main() {
   runApp(MenuApp());
@@ -101,7 +102,14 @@ class MenuPage extends StatelessWidget {
                             builder: (context) => Pertemuan3Page(),
                           ),
                         );
-                      } // Lanjutkan untuk pertemuan-pertemuan lainnya
+                      } else if (index == 3) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Pertemuan4Page(),
+                          ),
+                        );
+                      }
                     },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blue,
@@ -115,6 +123,7 @@ class MenuPage extends StatelessWidget {
                     child: Text(menuItems[index]),
                   ),
                 );
+              
               },
             ),
           ),
